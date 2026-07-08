@@ -1,363 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Armaghan Ahmad Shad — Cloud & DevOps, in progress</title>
-<meta name="description" content="Portfolio of Armaghan Ahmad Shad, IT student at MNS UET Multan, building toward cloud & DevOps engineering — CI/CD, IaC, containers, and monitoring.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armaghan Ahmad Shad — Cloud & DevOps, in progress</title>
+  <meta name="description"
+    content="Portfolio of Armaghan Ahmad Shad, IT student at MNS UET Multan, building toward cloud & DevOps engineering — CI/CD, IaC, containers, and monitoring.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header class="site-nav">
-  <div class="nav-inner">
-    <a href="#top" class="nav-logo"><img src="assets/avatar.png" alt="" class="nav-avatar">armaghan.dev</a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
-    <ul class="nav-links">
-      <li><a href="#about">about</a></li>
-      <li><a href="#skills">skills</a></li>
-      <li><a href="#certificates">certificates</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#blog">blog</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
-  </div>
-</header>
-
-<main id="top">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="avatar-row">
-          <img class="avatar" src="assets/avatar.png" alt="Portrait illustration of armaghan Ahmad Shad at a laptop">
-          <span class="eyebrow">$ whoami</span>
-        </div>
-        <h1>Building the pipeline<br>from <span class="accent">student</span> to <span class="accent">DevOps engineer.</span></h1>
-        <p class="lede">I'm Armaghan Ahmad Shad — an Information Technology student at MNS UET Multan, Microsoft Learn Student Ambassador, and cloud computing enthusiast. This is a running log of what I'm building on the way to a DevOps role: pipelines, infrastructure code, containers, and the occasional broken deploy I learned from.</p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View projects</a>
-          <a href="#contact" class="btn btn-ghost">Get in touch</a>
-        </div>
-      </div>
-
-      <div class="pipeline" role="img" aria-label="Animated diagram of a CI/CD pipeline: code, build, test, deploy">
-        <div class="pipeline-label">
-          <span>pipeline.yml</span>
-          <span class="status done">status: cycling</span>
-        </div>
-        <div class="pipeline-track">
-          <div class="stage lit"><div class="node">01</div><span class="name">CODE</span></div>
-          <div class="stage"><div class="node">02</div><span class="name">BUILD</span></div>
-          <div class="stage"><div class="node">03</div><span class="name">TEST</span></div>
-          <div class="stage"><div class="node">04</div><span class="name">DEPLOY</span></div>
-        </div>
-      </div>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo"><img src="assets/avatar.png" alt="" class="nav-avatar">armaghan.dev</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#certificates">certificates</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#blog">blog</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
     </div>
-  </section>
+  </header>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">01 / about</span>
-        <h2>Still early. Already building.</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-copy reveal">
-          <p><strong>I'm currently a 2nd-semester BS Information Technology student</strong> at Muhammad Nawaz Sharif University of Engineering &amp; Technology (MNS UET), Multan — so this portfolio is honest about where I am: a student building real, working projects while I learn cloud and DevOps properly, not a resume padded with invented job history.</p>
-          <p>As a <strong>Microsoft Learn Student Ambassador</strong>, I run technical sessions and workshops for the student community, and I also teach part-time at The Knowledge School. Between both, I've gotten comfortable explaining infrastructure concepts to people who've never touched a terminal — which turns out to be excellent practice for writing clear runbooks.</p>
-          <p>My focus right now: Git workflows, Python tooling, and the first layer of the DevOps stack — CI/CD, infrastructure as code, and containers — with cloud computing as the direction I'm growing into.</p>
-        </div>
-        <ul class="timeline reveal">
-          <li>
-            <div class="when">Mar 2025 — present</div>
-            <div class="what">Microsoft Learn Student Ambassador</div>
-            <div class="where">MSA, MNS UET Multan</div>
-          </li>
-          <li>
-            <div class="when">Jan 2025 — present</div>
-            <div class="what">Teacher</div>
-            <div class="where">The Knowledge School, Multan</div>
-          </li>
-          <li>
-            <div class="when">2025 — present</div>
-            <div class="what">BS Information Technology, 2nd semester</div>
-            <div class="where">MNS UET Multan</div>
-          </li>
-          <li>
-            <div class="when">2023 — 2025</div>
-            <div class="what">Intermediate, Computer Science</div>
-            <div class="where">BISE Multan</div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <main id="top">
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">02 / skills</span>
-        <h2>Current stack</h2>
-        <p>What I actively use, roughly ordered by how much I've practiced it. Cloud platforms and orchestration are next on the list.</p>
-      </div>
-      <div class="skills-grid reveal">
-        <div class="skill-chip">Git &amp; GitHub<span class="lvl">daily use</span></div>
-        <div class="skill-chip">Python<span class="lvl">daily use</span></div>
-        <div class="skill-chip">Pandas<span class="lvl">comfortable</span></div>
-        <div class="skill-chip">Linux / Bash<span class="lvl">comfortable</span></div>
-        <div class="skill-chip">Docker<span class="lvl">learning</span></div>
-        <div class="skill-chip">GitHub Actions<span class="lvl">learning</span></div>
-        <div class="skill-chip">Terraform<span class="lvl">learning</span></div>
-        <div class="skill-chip">Microsoft Azure<span class="lvl">exploring</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICATES -->
-  <section id="certificates">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">03 / certificates</span>
-        <h2>Certifications</h2>
-        <p>Completed courses I've used to build a foundation before diving into the DevOps-specific projects above.</p>
-      </div>
-      <div class="cert-grid">
-        <div class="cert-card reveal">
-          <div class="cert-icon" aria-hidden="true">
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
-              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="avatar-row">
+            <img class="avatar" src="assets/avatar.png" alt="Portrait illustration of armaghan Ahmad Shad at a laptop">
+            <span class="eyebrow">$ whoami</span>
           </div>
-          <h3>Google AI for Data Analysis</h3>
-          <span class="cert-issuer">Google</span>
-        </div>
-        <div class="cert-card reveal">
-          <div class="cert-icon" aria-hidden="true">
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
-              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          <h1>Building the pipeline<br>from <span class="accent">student</span> to <span class="accent">DevOps
+              engineer.</span></h1>
+          <p class="lede">I'm Armaghan Ahmad Shad — an Information Technology student at MNS UET Multan, Microsoft Learn
+            Student Ambassador, and cloud computing enthusiast. This is a running log of what I'm building on the way to
+            a DevOps role: pipelines, infrastructure code, containers, and the occasional broken deploy I learned from.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View projects</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
           </div>
-          <h3>Google AI for App Building</h3>
-          <span class="cert-issuer">Google</span>
         </div>
-        <div class="cert-card reveal">
-          <div class="cert-icon" aria-hidden="true">
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
-              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+
+        <div class="pipeline" role="img" aria-label="Animated diagram of a CI/CD pipeline: code, build, test, deploy">
+          <div class="pipeline-label">
+            <span>pipeline.yml</span>
+            <span class="status done">status: cycling</span>
           </div>
-          <h3>Google AI for Research and Insights</h3>
-          <span class="cert-issuer">Google</span>
-        </div>
-        <div class="cert-card reveal">
-          <div class="cert-icon" aria-hidden="true">
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
-              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          <div class="pipeline-track">
+            <div class="stage lit">
+              <div class="node">01</div><span class="name">CODE</span>
+            </div>
+            <div class="stage">
+              <div class="node">02</div><span class="name">BUILD</span>
+            </div>
+            <div class="stage">
+              <div class="node">03</div><span class="name">TEST</span>
+            </div>
+            <div class="stage">
+              <div class="node">04</div><span class="name">DEPLOY</span>
+            </div>
           </div>
-          <h3>Hello, Python!</h3>
-          <span class="cert-issuer">Google</span>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">04 / projects</span>
-        <h2>Learning-in-public builds</h2>
-        <p>Three practice projects that map to the core DevOps stack. Each repo README documents what broke and what I'd do differently — that's most of the value.</p>
-      </div>
-
-      <!-- Project 1 -->
-      <article class="project-card reveal">
-        <div class="project-visual">
-          <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="1" y="1" width="318" height="218" rx="8" fill="none" stroke="#1E2732"/>
-            <g font-family="JetBrains Mono, monospace" font-size="10" fill="#8B98A5">
-              <rect x="20" y="30" width="70" height="34" rx="5" fill="none" stroke="#4FD1C5"/>
-              <text x="55" y="51" text-anchor="middle" fill="#4FD1C5">push</text>
-              <line x1="90" y1="47" x2="130" y2="47" stroke="#1E2732" stroke-width="2"/>
-              <rect x="130" y="30" width="70" height="34" rx="5" fill="none" stroke="#F2A65A"/>
-              <text x="165" y="51" text-anchor="middle" fill="#F2A65A">lint+test</text>
-              <line x1="200" y1="47" x2="240" y2="47" stroke="#1E2732" stroke-width="2"/>
-              <rect x="240" y="30" width="60" height="34" rx="5" fill="none" stroke="#4FD1C5"/>
-              <text x="270" y="51" text-anchor="middle" fill="#4FD1C5">build</text>
-              <line x1="270" y1="64" x2="270" y2="100" stroke="#1E2732" stroke-width="2"/>
-              <rect x="220" y="100" width="80" height="34" rx="5" fill="none" stroke="#4FD1C5"/>
-              <text x="260" y="121" text-anchor="middle" fill="#4FD1C5">deploy</text>
-              <text x="160" y="180" text-anchor="middle" fill="#5A6672" font-size="11">.github/workflows/ci.yml</text>
-            </g>
-          </svg>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">01 / about</span>
+          <h2>Still early. Already building.</h2>
         </div>
-        <div class="project-body">
-          <span class="tag">CI / CD</span>
-          <h3>Automated pipeline for a Flask API</h3>
-          <p class="desc">A small Python/Flask service with a GitHub Actions workflow that lints, runs pytest, builds a Docker image, and deploys to Render on every push to main. Built to understand exactly what a "green pipeline" is actually checking.</p>
-          <ul class="stack-list">
-            <li>Python</li><li>Flask</li><li>GitHub Actions</li><li>Pytest</li><li>Docker</li>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p><strong>I'm currently a 2nd-semester BS Information Technology student</strong> at Muhammad Nawaz Sharif
+              University of Engineering &amp; Technology (MNS UET), Multan — so this portfolio is honest about where I
+              am: a student building real, working projects while I learn cloud and DevOps properly, not a resume padded
+              with invented job history.</p>
+            <p>As a <strong>Microsoft Learn Student Ambassador</strong>, I run technical sessions and workshops for the
+              student community, and I also teach part-time at The Knowledge School. Between both, I've gotten
+              comfortable explaining infrastructure concepts to people who've never touched a terminal — which turns out
+              to be excellent practice for writing clear runbooks.</p>
+            <p>My focus right now: Git workflows, Python tooling, and the first layer of the DevOps stack — CI/CD,
+              infrastructure as code, and containers — with cloud computing as the direction I'm growing into.</p>
+          </div>
+          <ul class="timeline reveal">
+            <li>
+              <div class="when">Mar 2025 — present</div>
+              <div class="what">Microsoft Learn Student Ambassador</div>
+              <div class="where">MSA, MNS UET Multan</div>
+            </li>
+            <li>
+              <div class="when">Jan 2025 — present</div>
+              <div class="what">Teacher</div>
+              <div class="where">The Knowledge School, Multan</div>
+            </li>
+            <li>
+              <div class="when">2025 — present</div>
+              <div class="what">BS Information Technology, 2nd semester</div>
+              <div class="where">MNS UET Multan</div>
+            </li>
+            <li>
+              <div class="when">2023 — 2025</div>
+              <div class="what">Intermediate, Computer Science</div>
+              <div class="where">BISE Multan</div>
+            </li>
           </ul>
-          <div class="project-links">
-            <a href="https://github.com/armaghanahmadshad" target="_blank" rel="noopener">→ Repository</a>
-            <a href="#" onclick="return false;" aria-disabled="true">Live demo (coming soon)</a>
-          </div>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <!-- Project 2 -->
-      <article class="project-card reveal">
-        <div class="project-visual">
-          <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="1" y="1" width="318" height="218" rx="8" fill="none" stroke="#1E2732"/>
-            <g font-family="JetBrains Mono, monospace" font-size="10" fill="#8B98A5">
-              <rect x="30" y="40" width="90" height="30" rx="5" fill="none" stroke="#4FD1C5"/>
-              <text x="75" y="59" text-anchor="middle" fill="#4FD1C5">main.tf</text>
-              <line x1="120" y1="55" x2="160" y2="55" stroke="#1E2732" stroke-width="2"/>
-              <text x="140" y="48" text-anchor="middle" fill="#5A6672" font-size="9">plan</text>
-              <rect x="160" y="40" width="90" height="30" rx="5" fill="none" stroke="#F2A65A"/>
-              <text x="205" y="59" text-anchor="middle" fill="#F2A65A">apply</text>
-              <line x1="205" y1="70" x2="205" y2="105" stroke="#1E2732" stroke-width="2"/>
-              <rect x="140" y="105" width="130" height="30" rx="5" fill="none" stroke="#4FD1C5"/>
-              <text x="205" y="124" text-anchor="middle" fill="#4FD1C5">Azure sandbox VM</text>
-              <text x="160" y="185" text-anchor="middle" fill="#5A6672" font-size="11">terraform plan → apply → destroy</text>
-            </g>
-          </svg>
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 / skills</span>
+          <h2>Current stack</h2>
+          <p>What I actively use, roughly ordered by how much I've practiced it. Cloud platforms and orchestration are
+            next on the list.</p>
         </div>
-        <div class="project-body">
-          <span class="tag">INFRASTRUCTURE AS CODE</span>
-          <h3>Terraform sandbox on Azure</h3>
-          <p class="desc">Reproducible infrastructure for a single Linux VM and networking, defined entirely in Terraform. Focus was on state management and writing a plan a reviewer could actually trust before typing "apply" on cloud spend.</p>
-          <ul class="stack-list">
-            <li>Terraform</li><li>Azure</li><li>Linux</li><li>Bash</li>
+        <div class="skills-grid reveal">
+          <div class="skill-chip">Git &amp; GitHub<span class="lvl">daily use</span></div>
+          <div class="skill-chip">Python<span class="lvl">daily use</span></div>
+          <div class="skill-chip">Pandas<span class="lvl">comfortable</span></div>
+          <div class="skill-chip">Linux / Bash<span class="lvl">comfortable</span></div>
+          <div class="skill-chip">Docker<span class="lvl">learning</span></div>
+          <div class="skill-chip">GitHub Actions<span class="lvl">learning</span></div>
+          <div class="skill-chip">Terraform<span class="lvl">learning</span></div>
+          <div class="skill-chip">Microsoft Azure<span class="lvl">exploring</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">03 / certificates</span>
+          <h2>Certifications</h2>
+          <p>Completed courses I've used to build a foundation before diving into the DevOps-specific projects above.
+          </p>
+        </div>
+        <div class="cert-grid">
+
+          <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/D08YBQB4SJ97" target="_blank" rel="noopener noreferrer">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2" />
+                <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2"
+                  stroke-linejoin="round" />
+                <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Google AI for Data Analysis</h3>
+            <span class="cert-issuer">Google</span>
+          </a>
+
+          <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/823L8KRFKRH4" target="_blank" rel="noopener noreferrer">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2" />
+                <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2"
+                  stroke-linejoin="round" />
+                <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Google AI for App Building</h3>
+            <span class="cert-issuer">Google</span>
+          </a>
+
+          <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/0Y9N40IRAJUT" target="_blank" rel="noopener noreferrer">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2" />
+                <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2"
+                  stroke-linejoin="round" />
+                <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Google AI for Research and Insights</h3>
+            <span class="cert-issuer">Google</span>
+          </a>
+
+          <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/WDSZ3GZ8YENI" target="_blank" rel="noopener noreferrer">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2" />
+                <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2"
+                  stroke-linejoin="round" />
+                <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Hello, Python!</h3>
+            <span class="cert-issuer">Google</span>
+          </a>
+
+          <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/XFCOYG5L94KX" target="_blank" rel="noopener noreferrer">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2" />
+                <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2"
+                  stroke-linejoin="round" />
+                <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>AI for Brainstorming and Planning</h3>
+            <span class="cert-issuer">Google</span>
+          </a>
+
+          <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/D9OMGDFL0G5N" target="_blank" rel="noopener noreferrer">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2" />
+                <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2"
+                  stroke-linejoin="round" />
+                <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Google AI Fundamentals</h3>
+            <span class="cert-issuer">Google</span>
+          </a>
+
+          <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/BTANI0KJF2S8" target="_blank" rel="noopener noreferrer">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2" />
+                <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2"
+                  stroke-linejoin="round" />
+                <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>AI for Writing and Communicating</h3>
+            <span class="cert-issuer">Google</span>
+          </a>
+
+          <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/BTM6JCZJFYD5" target="_blank" rel="noopener noreferrer">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2" />
+                <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2"
+                  stroke-linejoin="round" />
+                <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>AI for Content Creation</h3>
+            <span class="cert-issuer">Google</span>
+          </a>
+
+          <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/D08YBQB4SJ97" target="_blank" rel="noopener noreferrer">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
+              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>AI for Data Analysis</h3>
+          <span class="cert-issuer">Google</span>
+        </a>
+
+        <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/specialization/QMQVU9NH3T3R" target="_blank" rel="noopener noreferrer">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
+              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Google AI Professional Certificate</h3>
+          <span class="cert-issuer">Google</span>
+        </a>
+
+        <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/U9A1QD7E3S09" target="_blank" rel="noopener noreferrer">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
+              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>C++ Programming Fundamentals</h3>
+          <span class="cert-issuer">Microsoft</span>
+        </a>
+
+        <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/Z8Q9YU8A4PHG" target="_blank" rel="noopener noreferrer">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
+              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Intermediate C++ Programming Techniques</h3>
+          <span class="cert-issuer">Microsoft</span>
+        </a>
+
+        <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/F5D5LXT8SHFF" target="_blank" rel="noopener noreferrer">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
+              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Object Oriented Programming with C++</h3>
+          <span class="cert-issuer">Microsoft</span>
+        </a>
+
+        <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/R0TZRSV6XQYR" target="_blank" rel="noopener noreferrer">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
+              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Advanced C++ Programming and Modern Practices</h3>
+          <span class="cert-issuer">Microsoft</span>
+        </a>
+
+        <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/professional-cert/3ZAVTH7XVZFA" target="_blank" rel="noopener noreferrer">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
+              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Microsoft Introduction to C++ Programming</h3>
+          <span class="cert-issuer">Microsoft</span>
+        </a>
+
+        <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/verify/MFXPGC8E4OJM" target="_blank" rel="noopener noreferrer">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="16" r="11" fill="none" stroke="#4FD1C5" stroke-width="2"/>
+              <path d="M14 25 L11 37 L20 32 L29 37 L26 25" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 16 L18 20 L26 11" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Python Programming Fundamentals</h3>
+          <span class="cert-issuer">Microsoft</span>
+        </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">04 / projects</span>
+          <h2>Learning-in-public builds</h2>
+          <p>Three practice projects that map to the core DevOps stack. Each repo README documents what broke and what
+            I'd do differently — that's most of the value.</p>
+        </div>
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-visual">
+            <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="1" y="1" width="318" height="218" rx="8" fill="none" stroke="#1E2732" />
+              <g font-family="JetBrains Mono, monospace" font-size="10" fill="#8B98A5">
+                <rect x="20" y="30" width="70" height="34" rx="5" fill="none" stroke="#4FD1C5" />
+                <text x="55" y="51" text-anchor="middle" fill="#4FD1C5">push</text>
+                <line x1="90" y1="47" x2="130" y2="47" stroke="#1E2732" stroke-width="2" />
+                <rect x="130" y="30" width="70" height="34" rx="5" fill="none" stroke="#F2A65A" />
+                <text x="165" y="51" text-anchor="middle" fill="#F2A65A">lint+test</text>
+                <line x1="200" y1="47" x2="240" y2="47" stroke="#1E2732" stroke-width="2" />
+                <rect x="240" y="30" width="60" height="34" rx="5" fill="none" stroke="#4FD1C5" />
+                <text x="270" y="51" text-anchor="middle" fill="#4FD1C5">build</text>
+                <line x1="270" y1="64" x2="270" y2="100" stroke="#1E2732" stroke-width="2" />
+                <rect x="220" y="100" width="80" height="34" rx="5" fill="none" stroke="#4FD1C5" />
+                <text x="260" y="121" text-anchor="middle" fill="#4FD1C5">deploy</text>
+                <text x="160" y="180" text-anchor="middle" fill="#5A6672" font-size="11">.github/workflows/ci.yml</text>
+              </g>
+            </svg>
+          </div>
+          <div class="project-body">
+            <span class="tag">CI / CD</span>
+            <h3>Automated pipeline for a Flask API</h3>
+            <p class="desc">A small Python/Flask service with a GitHub Actions workflow that lints, runs pytest, builds
+              a Docker image, and deploys to Render on every push to main. Built to understand exactly what a "green
+              pipeline" is actually checking.</p>
+            <ul class="stack-list">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>GitHub Actions</li>
+              <li>Pytest</li>
+              <li>Docker</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/armaghanahmadshad" target="_blank" rel="noopener">→ Repository</a>
+              <a href="#" onclick="return false;" aria-disabled="true">Live demo (coming soon)</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-visual">
+            <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="1" y="1" width="318" height="218" rx="8" fill="none" stroke="#1E2732" />
+              <g font-family="JetBrains Mono, monospace" font-size="10" fill="#8B98A5">
+                <rect x="30" y="40" width="90" height="30" rx="5" fill="none" stroke="#4FD1C5" />
+                <text x="75" y="59" text-anchor="middle" fill="#4FD1C5">main.tf</text>
+                <line x1="120" y1="55" x2="160" y2="55" stroke="#1E2732" stroke-width="2" />
+                <text x="140" y="48" text-anchor="middle" fill="#5A6672" font-size="9">plan</text>
+                <rect x="160" y="40" width="90" height="30" rx="5" fill="none" stroke="#F2A65A" />
+                <text x="205" y="59" text-anchor="middle" fill="#F2A65A">apply</text>
+                <line x1="205" y1="70" x2="205" y2="105" stroke="#1E2732" stroke-width="2" />
+                <rect x="140" y="105" width="130" height="30" rx="5" fill="none" stroke="#4FD1C5" />
+                <text x="205" y="124" text-anchor="middle" fill="#4FD1C5">Azure sandbox VM</text>
+                <text x="160" y="185" text-anchor="middle" fill="#5A6672" font-size="11">terraform plan → apply →
+                  destroy</text>
+              </g>
+            </svg>
+          </div>
+          <div class="project-body">
+            <span class="tag">INFRASTRUCTURE AS CODE</span>
+            <h3>Terraform sandbox on Azure</h3>
+            <p class="desc">Reproducible infrastructure for a single Linux VM and networking, defined entirely in
+              Terraform. Focus was on state management and writing a plan a reviewer could actually trust before typing
+              "apply" on cloud spend.</p>
+            <ul class="stack-list">
+              <li>Terraform</li>
+              <li>Azure</li>
+              <li>Linux</li>
+              <li>Bash</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/armaghanahmadshad" target="_blank" rel="noopener">→ Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-visual">
+            <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="1" y="1" width="318" height="218" rx="8" fill="none" stroke="#1E2732" />
+              <g font-family="JetBrains Mono, monospace" font-size="10" fill="#8B98A5">
+                <rect x="20" y="35" width="70" height="30" rx="5" fill="none" stroke="#4FD1C5" />
+                <text x="55" y="54" text-anchor="middle" fill="#4FD1C5">web</text>
+                <rect x="20" y="80" width="70" height="30" rx="5" fill="none" stroke="#4FD1C5" />
+                <text x="55" y="99" text-anchor="middle" fill="#4FD1C5">worker</text>
+                <line x1="90" y1="50" x2="140" y2="70" stroke="#1E2732" stroke-width="2" />
+                <line x1="90" y1="95" x2="140" y2="75" stroke="#1E2732" stroke-width="2" />
+                <rect x="140" y="55" width="70" height="30" rx="5" fill="none" stroke="#F2A65A" />
+                <text x="175" y="74" text-anchor="middle" fill="#F2A65A">Prometheus</text>
+                <line x1="210" y1="70" x2="250" y2="70" stroke="#1E2732" stroke-width="2" />
+                <rect x="250" y="55" width="55" height="30" rx="5" fill="none" stroke="#4FD1C5" />
+                <text x="277" y="74" text-anchor="middle" fill="#4FD1C5">Grafana</text>
+                <text x="160" y="185" text-anchor="middle" fill="#5A6672" font-size="11">docker-compose.yml</text>
+              </g>
+            </svg>
+          </div>
+          <div class="project-body">
+            <span class="tag">CONTAINERS &amp; MONITORING</span>
+            <h3>Monitored multi-container app</h3>
+            <p class="desc">A web + worker app orchestrated with Docker Compose, with Prometheus scraping metrics and a
+              Grafana dashboard on top. Built specifically to practice reading dashboards under simulated load rather
+              than only shipping the containers.</p>
+            <ul class="stack-list">
+              <li>Docker Compose</li>
+              <li>Prometheus</li>
+              <li>Grafana</li>
+              <li>Python</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/armaghanahmadshad" target="_blank" rel="noopener">→ Repository</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">05 / blog</span>
+          <h2>Notes from the process</h2>
+          <p>Short write-ups on what I'm learning, aimed at other students starting the same climb.</p>
+        </div>
+        <div class="blog-grid">
+          <a href="blog/why-learn-cicd-early.html" class="blog-card reveal">
+            <span class="meta">CI/CD — 6 min read</span>
+            <h3>Why Every Developer Should Learn CI/CD Early</h3>
+            <p>The pipeline isn't just for "DevOps people" — it's the fastest feedback loop a student developer can
+              build, and most courses never teach it.</p>
+            <span class="read">Read post →</span>
+          </a>
+          <a href="blog/first-pipeline-lessons.html" class="blog-card reveal">
+            <span class="meta">GitOps — 7 min read</span>
+            <h3>GitOps vs Traditional Ops: What I Learned Shipping My First Pipeline</h3>
+            <p>Three broken deploys taught me more about the difference between GitOps and manual ops than any article
+              did.</p>
+            <span class="read">Read post →</span>
+          </a>
+          <a href="blog/compose-to-kubernetes.html" class="blog-card reveal">
+            <span class="meta">Containers — 6 min read</span>
+            <h3>Docker Compose to Kubernetes: A Student's Roadmap</h3>
+            <p>A realistic, unhurried path from a single docker-compose.yml to understanding what Kubernetes is actually
+              solving.</p>
+            <span class="read">Read post →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">06 / contact</span>
+          <h2>Let's talk</h2>
+          <p style="color:var(--text-dim); max-width:420px; margin-top:10px;">Open to internships, collaborations, and
+            DevOps-adjacent student opportunities. I reply within a day or two.</p>
+          <ul class="contact-links">
+            <li><a href="mailto:armaghanahmadshad@gmail.com">armaghanahmadshad@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/armaghanahmadshad" target="_blank"
+                rel="noopener">linkedin.com/in/armaghanahmadshad</a></li>
+            <li><a href="https://github.com/armaghanahmadshad" target="_blank"
+                rel="noopener">github.com/armaghanahmadshad</a></li>
           </ul>
-          <div class="project-links">
-            <a href="https://github.com/armaghanahmadshad" target="_blank" rel="noopener">→ Repository</a>
+        </div>
+        <form class="contact-form reveal" aria-label="Contact form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
           </div>
-        </div>
-      </article>
-
-      <!-- Project 3 -->
-      <article class="project-card reveal">
-        <div class="project-visual">
-          <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="1" y="1" width="318" height="218" rx="8" fill="none" stroke="#1E2732"/>
-            <g font-family="JetBrains Mono, monospace" font-size="10" fill="#8B98A5">
-              <rect x="20" y="35" width="70" height="30" rx="5" fill="none" stroke="#4FD1C5"/>
-              <text x="55" y="54" text-anchor="middle" fill="#4FD1C5">web</text>
-              <rect x="20" y="80" width="70" height="30" rx="5" fill="none" stroke="#4FD1C5"/>
-              <text x="55" y="99" text-anchor="middle" fill="#4FD1C5">worker</text>
-              <line x1="90" y1="50" x2="140" y2="70" stroke="#1E2732" stroke-width="2"/>
-              <line x1="90" y1="95" x2="140" y2="75" stroke="#1E2732" stroke-width="2"/>
-              <rect x="140" y="55" width="70" height="30" rx="5" fill="none" stroke="#F2A65A"/>
-              <text x="175" y="74" text-anchor="middle" fill="#F2A65A">Prometheus</text>
-              <line x1="210" y1="70" x2="250" y2="70" stroke="#1E2732" stroke-width="2"/>
-              <rect x="250" y="55" width="55" height="30" rx="5" fill="none" stroke="#4FD1C5"/>
-              <text x="277" y="74" text-anchor="middle" fill="#4FD1C5">Grafana</text>
-              <text x="160" y="185" text-anchor="middle" fill="#5A6672" font-size="11">docker-compose.yml</text>
-            </g>
-          </svg>
-        </div>
-        <div class="project-body">
-          <span class="tag">CONTAINERS &amp; MONITORING</span>
-          <h3>Monitored multi-container app</h3>
-          <p class="desc">A web + worker app orchestrated with Docker Compose, with Prometheus scraping metrics and a Grafana dashboard on top. Built specifically to practice reading dashboards under simulated load rather than only shipping the containers.</p>
-          <ul class="stack-list">
-            <li>Docker Compose</li><li>Prometheus</li><li>Grafana</li><li>Python</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://github.com/armaghanahmadshad" target="_blank" rel="noopener">→ Repository</a>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
           </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- BLOG -->
-  <section id="blog">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">05 / blog</span>
-        <h2>Notes from the process</h2>
-        <p>Short write-ups on what I'm learning, aimed at other students starting the same climb.</p>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send message</button>
+          <p class="form-status" role="status"></p>
+        </form>
       </div>
-      <div class="blog-grid">
-        <a href="blog/why-learn-cicd-early.html" class="blog-card reveal">
-          <span class="meta">CI/CD — 6 min read</span>
-          <h3>Why Every Developer Should Learn CI/CD Early</h3>
-          <p>The pipeline isn't just for "DevOps people" — it's the fastest feedback loop a student developer can build, and most courses never teach it.</p>
-          <span class="read">Read post →</span>
-        </a>
-        <a href="blog/first-pipeline-lessons.html" class="blog-card reveal">
-          <span class="meta">GitOps — 7 min read</span>
-          <h3>GitOps vs Traditional Ops: What I Learned Shipping My First Pipeline</h3>
-          <p>Three broken deploys taught me more about the difference between GitOps and manual ops than any article did.</p>
-          <span class="read">Read post →</span>
-        </a>
-        <a href="blog/compose-to-kubernetes.html" class="blog-card reveal">
-          <span class="meta">Containers — 6 min read</span>
-          <h3>Docker Compose to Kubernetes: A Student's Roadmap</h3>
-          <p>A realistic, unhurried path from a single docker-compose.yml to understanding what Kubernetes is actually solving.</p>
-          <span class="read">Read post →</span>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="wrap contact-grid">
-      <div class="reveal">
-        <span class="eyebrow">06 / contact</span>
-        <h2>Let's talk</h2>
-        <p style="color:var(--text-dim); max-width:420px; margin-top:10px;">Open to internships, collaborations, and DevOps-adjacent student opportunities. I reply within a day or two.</p>
-        <ul class="contact-links">
-          <li><a href="mailto:armaghanahmadshad@gmail.com">armaghanahmadshad@gmail.com</a></li>
-          <li><a href="https://www.linkedin.com/in/armaghanahmadshad" target="_blank" rel="noopener">linkedin.com/in/armaghanahmadshad</a></li>
-          <li><a href="https://github.com/armaghanahmadshad" target="_blank" rel="noopener">github.com/armaghanahmadshad</a></li>
-        </ul>
-      </div>
-      <form class="contact-form reveal" aria-label="Contact form">
-        <div class="field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send message</button>
-        <p class="form-status" role="status"></p>
-      </form>
-    </div>
-  </section>
+  </main>
 
-</main>
+  <footer>
+    <div class="wrap">armaghan Ahmad Shad — built with plain HTML, CSS, and JS. No frameworks harmed.</div>
+  </footer>
 
-<footer>
-  <div class="wrap">armaghan Ahmad Shad — built with plain HTML, CSS, and JS. No frameworks harmed.</div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
