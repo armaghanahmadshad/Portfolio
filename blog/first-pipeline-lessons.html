@@ -12,12 +12,21 @@
 <body>
 <header class="site-nav">
   <div class="nav-inner">
-    <a href="../index.html" class="nav-logo"><span class="dot"></span>armghan.dev</a>
+    <a href="../index.html" class="nav-logo"><span class="dot"></span>armaghan.dev</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
+    <ul class="nav-links">
+      <li><a href="../about.html">about</a></li>
+      <li><a href="../skills.html">skills</a></li>
+      <li><a href="../certificates.html">certificates</a></li>
+      <li><a href="../projects.html">projects</a></li>
+      <li><a class="active" aria-current="page" href="../blog.html">blog</a></li>
+      <li><a href="../contact.html">contact</a></li>
+    </ul>
   </div>
 </header>
 
 <div class="post-wrap">
-  <a href="../index.html#blog" class="post-back">← back to all posts</a>
+  <a href="../blog.html" class="post-back">← back to all posts</a>
   <p class="post-meta">GitOps · 7 min read · student notes</p>
   <h1>GitOps vs Traditional Ops: What I Learned Shipping My First Pipeline</h1>
 
@@ -44,5 +53,6 @@
 <footer>
   <div class="wrap">Armghan Ahmad Shad — built with plain HTML, CSS, and JS.</div>
 </footer>
+<script src="../script.js"></script>
 </body>
 </html>

@@ -145,6 +145,7 @@ header.site-nav {
   transition: color .2s ease;
 }
 .nav-links a:hover { color: var(--accent-cyan); }
+.nav-links a.active { color: var(--accent-cyan); }
 
 .nav-toggle {
   display: none;
