@@ -2,25 +2,25 @@
    DESIGN TOKENS
    ========================================================= */
 :root {
-  --bg: #0A0F14;
-  --bg-elev: #111820;
-  --bg-elev-2: #161F29;
-  --line: #1E2732;
-  --text: #E7EDF3;
-  --text-dim: #8B98A5;
-  --text-faint: #5A6672;
-  --accent-cyan: #4FD1C5;
-  --accent-cyan-dim: #2E6F68;
-  --accent-amber: #F2A65A;
+  --bg: #090814;
+  --bg-elev: #121029;
+  --bg-elev-2: #181434;
+  --line: #2F2850;
+  --text: #F5EBFF;
+  --text-dim: #B2A5D8;
+  --text-faint: #7D74A5;
+  --accent-cyan: #A16AFF;
+  --accent-cyan-dim: #6B4C99;
+  --accent-amber: #FF8AB4;
   --radius: 8px;
   --mono: "JetBrains Mono", "Consolas", monospace;
   --sans: "Manrope", -apple-system, BlinkMacSystemFont, sans-serif;
   --maxw: 1120px;
-  --bg-gradient: radial-gradient(circle at top, rgba(79,209,197,0.14), transparent 24%), radial-gradient(circle at 84% 14%, rgba(242,166,90,0.15), transparent 18%);
+  --bg-gradient: radial-gradient(circle at top, rgba(161,106,255,0.16), transparent 24%), radial-gradient(circle at 84% 14%, rgba(255,138,180,0.18), transparent 18%);
 }
 
 * { box-sizing: border-box; }
-::selection { background: rgba(79,209,197,0.35); color: #07110D; }
+::selection { background: rgba(161,106,255,0.28); color: #100E21; }
 html { scroll-behavior: smooth; }
 
 @media (prefers-reduced-motion: reduce) {
@@ -245,7 +245,7 @@ header.site-nav {
 
 .callout-card {
   background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(15,24,34,0.95));
-  border: 1px solid rgba(79,209,197,0.12);
+  border: 1px solid rgba(161,106,255,0.15);
   border-radius: 18px;
   padding: 36px 34px;
   display: grid;
@@ -495,7 +495,7 @@ header.site-nav {
 .stage.lit .node {
   border-color: var(--accent-cyan);
   color: var(--accent-cyan);
-  box-shadow: 0 0 14px rgba(79,209,197,.35);
+  box-shadow: 0 0 14px rgba(161,106,255,.25);
 }
 .stage:nth-child(1) .node { animation: stage-pulse 4.8s ease-in-out infinite; animation-delay: 0s; }
 .stage:nth-child(2) .node { animation: stage-pulse 4.8s ease-in-out infinite; animation-delay: 1.1s; }
@@ -503,7 +503,7 @@ header.site-nav {
 .stage:nth-child(4) .node { animation: stage-pulse 4.8s ease-in-out infinite; animation-delay: 3.3s; }
 @keyframes stage-pulse {
   0%, 92%, 100% { border-color: var(--line); color: var(--text-faint); box-shadow: none; }
-  8%, 30% { border-color: var(--accent-cyan); color: var(--accent-cyan); box-shadow: 0 0 14px rgba(79,209,197,.35); }
+  8%, 30% { border-color: var(--accent-cyan); color: var(--accent-cyan); box-shadow: 0 0 14px rgba(161,106,255,.25); }
 }
 
 /* =========================================================
