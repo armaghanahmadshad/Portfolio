@@ -586,8 +586,8 @@ header.site-nav {
    ========================================================= */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
 }
 
 .skills-group {
@@ -600,21 +600,53 @@ header.site-nav {
   margin-bottom: 18px;
   color: var(--text);
 }
-.skill-chip {
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   border: 1px solid var(--line);
   background: var(--bg-elev);
-  border-radius: var(--radius);
-  padding: 16px 14px;
-  text-align: center;
-  transition: border-color .2s ease, transform .2s ease;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  transition: all .25s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
 }
-.skill-chip:hover { border-color: var(--accent-cyan); transform: translateY(-3px); }
-.skill-chip .lvl {
+.skill-card:hover {
+  border-color: #D4A017;
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 1px rgba(212, 160, 23, 0.35), 0 10px 22px rgba(212, 160, 23, 0.18);
+}
+.skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.skill-icon svg {
+  width: 32px;
+  height: 32px;
+}
+.skill-name {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+.skill-chip .lvl,
+.skill-card .lvl {
   font-family: var(--mono);
   font-size: 11px;
-  color: var(--text-faint);
-  display: block;
-  margin-top: 6px;
+  color: #B8860B;
+  background: rgba(212, 160, 23, 0.1);
+  border: 1px solid rgba(212, 160, 23, 0.3);
+  border-radius: 999px;
+  padding: 4px 10px;
+  display: inline-block;
+  margin-top: auto;
 }
 
 /* =========================================================
@@ -642,12 +674,12 @@ header.site-nav {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
 }
 .cert-card:hover {
-  border-color: var(--accent-cyan);
+  border-color: #D4A017;
   transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0 0 1px rgba(212, 160, 23, 0.35), 0 10px 22px rgba(212, 160, 23, 0.18);
 }
 .cert-card:focus-visible {
-  outline: 2px solid var(--accent-cyan);
+  outline: 2px solid #D4A017;
   outline-offset: 4px;
 }
 .cert-icon {
@@ -695,9 +727,9 @@ header.site-nav {
   color: currentColor;
 }
 .cert-card:hover .cert-btn {
-  border-color: var(--accent-cyan);
-  color: var(--accent-cyan);
-  background: rgba(79, 209, 197, 0.06);
+  border-color: #D4A017;
+  color: #B8860B;
+  background: rgba(212, 160, 23, 0.08);
 }
 
 /* =========================================================

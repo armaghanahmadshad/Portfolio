@@ -27,23 +27,57 @@ if ('IntersectionObserver' in window && revealEls.length) {
   revealEls.forEach(el => el.classList.add('is-visible'));
 }
 
-// Contact form (static demo — no backend wired up yet)
+// Contact form — submits to Formspree via fetch (no page reload)
 const form = document.querySelector('.contact-form');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  const status = form.querySelector('.form-status');
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const submitBtnDefaultText = submitBtn ? submitBtn.textContent : '';
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const status = form.querySelector('.form-status');
+
     const name = form.querySelector('#name').value.trim();
     if (!name) {
-      status.textContent = 'Please add your name before sending.';
       status.style.color = '#F2A65A';
+      status.textContent = 'Please add your name before sending.';
       return;
     }
-    // NOTE: This form has no backend connected yet.
-    // Wire it up to Formspree, Netlify Forms, or your own endpoint —
-    // see README.md "Contact form" section for instructions.
-    status.style.color = '#4FD1C5';
-    status.textContent = `Thanks, ${name.split(' ')[0]} — this demo form isn't connected to email yet. See README.md to enable it.`;
-    form.reset();
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+    }
+    status.style.color = '#8B98A5';
+    status.textContent = 'Sending your message…';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        status.style.color = '#4FD1C5';
+        status.textContent = `Thanks, ${name.split(' ')[0]} — your message has been sent. I'll reply within one business day.`;
+        form.reset();
+      } else {
+        const data = await response.json().catch(() => null);
+        const message = data && data.errors
+          ? data.errors.map(err => err.message).join(', ')
+          : 'Something went wrong. Please try again or email me directly.';
+        status.style.color = '#F2A65A';
+        status.textContent = message;
+      }
+    } catch (err) {
+      status.style.color = '#F2A65A';
+      status.textContent = 'Network error — please try again or email me directly.';
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = submitBtnDefaultText;
+      }
+    }
   });
 }
