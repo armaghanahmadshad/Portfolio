@@ -51,7 +51,7 @@
 
   <header class="site-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><span class="nav-logo-badge"><span class="badge-text">AM</span><span class="badge-accent">G</span></span><span class="nav-logo-text">Armaghan Ahmad Shad <span class="nav-logo-subtitle">DevOps & Cloud Engineer</span></span></a>
+      <a href="index.html" class="nav-logo"><span class="nav-logo-mark" aria-hidden="true"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><polygon points="20,5 35,33 27,33 20,19 13,33 5,33" fill="#F59E0B"/></svg></span><span class="nav-logo-text">Armaghan Ahmad Shad <span class="nav-logo-subtitle">DevOps & Cloud Engineer</span></span></a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
@@ -61,50 +61,64 @@
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <a href="contact.html" class="nav-talk-btn">LET'S TALK
+        <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </a>
     </div>
   </header>
 
   <main id="top">
 
     <!-- HERO -->
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="avatar-row">
-            <img class="avatar" src="assets/avatar.png" alt="Portrait illustration of armaghan Ahmad Shad at a laptop">
-            <span class="eyebrow">$ whoami</span>
+    <section class="hero-v3">
+      <div class="wrap hero-v3-grid">
+        <div class="hero-v3-copy">
+          <span class="hero-v3-eyebrow">HELLO, I'M</span>
+          <h1 class="hero-v3-name">Armaghan<br><span class="accent">Ahmad Shad</span></h1>
+          <p class="hero-v3-role">DevOps &amp; Cloud Engineer <span class="hero-v3-role-dim">(in progress)</span></p>
+          <p class="hero-v3-desc">I'm a BS Information Technology student and Microsoft Learn Student Ambassador
+            building toward cloud and DevOps engineering — learning pipelines, infrastructure code, and containers
+            through real practice projects.</p>
+
+          <div class="hero-v3-stats">
+            <div>
+              <span class="hero-v3-stat-num">15+</span>
+              <span class="hero-v3-stat-label">Certifications<br>Earned</span>
+            </div>
+            <div>
+              <span class="hero-v3-stat-num">3+</span>
+              <span class="hero-v3-stat-label">Practice Projects<br>Completed</span>
+            </div>
+            <div>
+              <span class="hero-v3-stat-num">8+</span>
+              <span class="hero-v3-stat-label">Tools &amp;<br>Technologies</span>
+            </div>
           </div>
-          <h1>Building the pipeline<br>from <span class="accent">student</span> to <span class="accent">DevOps
-              engineer.</span></h1>
-          <p class="lede">I'm Armaghan Ahmad Shad — an Information Technology student at MNS UET Multan, Microsoft Learn
-            Student Ambassador, and cloud computing enthusiast. This is a running log of what I'm building on the way to
-            a DevOps role: pipelines, infrastructure code, containers, and the occasional broken deploy I learned from.
-          </p>
-          <div class="hero-cta">
-            <a href="projects.html" class="btn btn-primary">View projects</a>
-            <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+
+          <div class="hero-v3-cta">
+            <a href="projects.html" class="btn-dark-pill">VIEW MY WORK
+              <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-v3-follow">
+            <span>FOLLOW ME</span>
+            <div class="hero-v3-social">
+              <a href="https://www.linkedin.com/in/armaghanahmadshad" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+              </a>
+              <a href="https://github.com/armaghanahmadshad" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+              </a>
+              <a href="mailto:armaghanahmadshad@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.4L4.4 7H19.6L12 12.4zM3 8.2V18h18V8.2l-9 6.3-9-6.3z"/></svg>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="pipeline" role="img" aria-label="Animated diagram of a CI/CD pipeline: code, build, test, deploy">
-          <div class="pipeline-label">
-            <span>pipeline.yml</span>
-            <span class="status done">status: cycling</span>
-          </div>
-          <div class="pipeline-track">
-            <div class="stage lit">
-              <div class="node">01</div><span class="name">CODE</span>
-            </div>
-            <div class="stage">
-              <div class="node">02</div><span class="name">BUILD</span>
-            </div>
-            <div class="stage">
-              <div class="node">03</div><span class="name">TEST</span>
-            </div>
-            <div class="stage">
-              <div class="node">04</div><span class="name">DEPLOY</span>
-            </div>
-          </div>
+        <div class="hero-v3-visual">
+          <img src="assets/hero-photo-panel.png" alt="Armaghan Ahmad Shad portrait panel" class="hero-v3-photo">
         </div>
       </div>
     </section>
