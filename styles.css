@@ -579,6 +579,12 @@ header.site-nav {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+.feature-card:hover {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28);
+  transform: translateY(-3px);
 }
 
 .feature-card h3 {
@@ -609,6 +615,7 @@ header.site-nav {
   padding: 36px 34px;
   display: grid;
   gap: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
 }
 
 .callout-card h2 {
@@ -1081,6 +1088,7 @@ header.site-nav {
   margin-bottom: 28px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 820px) { .project-card { grid-template-columns: 1fr; } }
 .project-card:nth-child(even) .project-visual { order: 2; }
@@ -1148,9 +1156,10 @@ header.site-nav {
   color: var(--text);
   display: flex;
   flex-direction: column;
-  transition: border-color .2s ease, transform .2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
 }
-.blog-card:hover { border-color: var(--accent-cyan); transform: translateY(-4px); }
+.blog-card:hover { border-color: var(--accent-cyan); transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28); }
 .blog-card .meta {
   font-family: var(--mono);
   font-size: 11px;
